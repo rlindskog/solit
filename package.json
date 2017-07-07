@@ -1,0 +1,20 @@
+{
+	"name": "solit",
+	"description": "Easy hot module replacement for the server. It's so lit.",
+  "author": "Ryan Lindskog <r.lindskog17@gmail.com>",
+	"version": "0.0.1-alpha.1",
+	"bin": {
+		"solit": "bin/solit.js"
+	},
+	"dependencies": {
+		"app-root-dir": "^1.0.2",
+		"babel-core": "^6.25.0",
+		"babel-loader": "^7.1.1",
+		"babel-preset-env": "^1.5.2",
+		"friendly-errors-webpack-plugin": "^1.6.1",
+		"memory-fs": "^0.4.1",
+		"spawn-server-webpack-plugin": "^1.7.1",
+		"webpack": "^3.0.0",
+		"webpack-node-externals": "^1.6.0"
+	}
+}
