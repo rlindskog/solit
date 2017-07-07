@@ -1,6 +1,8 @@
-Solit, a true HMR server in memory.
-===================
-Hot server. It's so lit. 🔥🔥🔥
+<h1>Solit</h1>
+<img src="https://cdn.rawgit.com/rlindskog/solit/3dc22e07/solit.svg" width="200px"  />
+<p>Simple HMR on the server, in memory.</p>
+
+***CURRENTLY IN ALPHA***
 
 **Getting started**
 
@@ -14,7 +16,7 @@ Then add this to your scripts
       "start": "solit start"
     }
 
-Ten add a `src/server/index.js` directory
+Then add a `src/server/index.js` directory
 
 In that index.js file, add
 
