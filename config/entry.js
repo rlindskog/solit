@@ -3,11 +3,9 @@ import app from 'srcdir'
 
 if (module.hot) {
   module.hot.accept('srcdir', () => {
-    console.log('🔁  HMR Reloading `./app`...')
+    console.log('🔁  HMR Reloading...')
   })
   console.info('✅  Server-side HMR Enabled!')
-} else {
-  console.info('❌  Server-side HMR Not Supported.')
 }
 
 export default express()
@@ -17,7 +15,7 @@ export default express()
       console.error(err)
       return
     }
-    console.log(`💁 Listening at http://${process.env.HOST}:${process.env.PORT}`)
+    console.log(`💁  Listening at http://${process.env.HOST}:${process.env.PORT}`)
   })
 
 

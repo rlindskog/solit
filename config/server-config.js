@@ -18,7 +18,7 @@ function ServerConfig (solitConfig) {
     output: {
       libraryTarget: 'commonjs2',
       path: path.resolve(rootDir, solitConfig.buildDir),
-      publicPath: IS_DEV ? 'http://127.0.0.1:3000' : '/',
+      publicPath: IS_DEV ? `http://${solitConfig.host}:${solitConfig.port}` : '/',
       filename: solitConfig.buildFilename,
     },
     target: 'node',
@@ -57,7 +57,7 @@ function ServerConfig (solitConfig) {
       new webpack.NamedModulesPlugin()
     ],
   }
-
+  
   if (IS_DEV) {
     serverConfig.entry.unshift('webpack/hot/poll?300')
     serverConfig.plugins.push(
