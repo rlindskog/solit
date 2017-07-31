@@ -15,8 +15,9 @@
   "author": "Ryan Lindskog",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.15.3",
     "npm-run-all": "^4.0.2",
     "nuxt": "^1.0.0-alpha.5",
-    "solit": "file:../"
+    "solit": "0.0.1-alpha.3"
   }
 }
