@@ -2,7 +2,7 @@
 	"name": "solit",
 	"description": "Easy hot module replacement for the server. It's so lit.",
 	"author": "Ryan Lindskog <r.lindskog17@gmail.com>",
-	"version": "0.0.1-alpha.3",
+	"version": "0.0.1-alpha.4",
 	"bin": {
 		"solit": "bin/solit.js"
 	},
