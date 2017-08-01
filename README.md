@@ -2,8 +2,6 @@
 <img src="https://cdn.rawgit.com/rlindskog/solit/3dc22e07/solit.svg" width="200px"  />
 <p>Simple HMR on the server, in memory.</p>
 
-***CURRENTLY IN ALPHA***
-
 **Getting started**
 
     npm install --save solit
