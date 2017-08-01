@@ -70,3 +70,4 @@ The default configuration is
       this.env = {} // just HOST and PORT.
     }
 
+Big thanks to [spawn-server-webpack-plugin](https://github.com/DylanPiercey/spawn-server-webpack-plugin), [backpack](https://github.com/palmerhq/backpack), and [nuxt](https://github.com/nuxt) for the inspiration / help.
