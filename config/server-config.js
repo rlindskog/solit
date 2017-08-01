@@ -56,6 +56,14 @@ function ServerConfig (solitConfig) {
       }),
       new webpack.NamedModulesPlugin()
     ],
+    resolve: {
+      alias: {
+        '~': path.resolve(solitConfig.srcDir),
+        '~~': path.resolve(rootDir),
+        '@': path.resolve(solitConfig.srcDir),
+        '@@': path.resolve(rootDir)
+      }
+    }
   }
   
   if (IS_DEV) {
@@ -73,6 +81,7 @@ function ServerConfig (solitConfig) {
       new webpack.optimize.UglifyJsPlugin()
     )
   }
+
   return serverConfig
 }
 
