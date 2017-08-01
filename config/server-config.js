@@ -44,9 +44,11 @@ function ServerConfig (solitConfig) {
       rules: [
         {
           test: /\.js?$/,
-          use: 'babel-loader',
           exclude: /node_modules/,
-          options: babelOptions
+          use: {
+            loader: 'babel-loader',
+            options: babelOptions
+          }
         }
       ],
     },
