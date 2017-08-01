@@ -57,7 +57,6 @@ function ServerConfig (solitConfig) {
       new webpack.NamedModulesPlugin()
     ],
     resolve: {
-      extensions: ['.js', '.json'],
       alias: {
         '~': path.resolve(solitConfig.srcDir),
         '~~': path.resolve(rootDir),
