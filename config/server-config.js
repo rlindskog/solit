@@ -4,6 +4,7 @@ const nodeExternals = require('webpack-node-externals')
 const path = require('path')
 const SpawnServerPlugin = require('spawn-server-webpack-plugin')
 const webpack = require('webpack')
+const babelOptions = require('./babel')
 
 // follow a similar API to https://nuxtjs.org/guide/configuration
 function ServerConfig (solitConfig) {
@@ -44,7 +45,8 @@ function ServerConfig (solitConfig) {
         {
           test: /\.js?$/,
           use: 'babel-loader',
-          exclude: /node_modules/
+          exclude: /node_modules/,
+          options: babelOptions
         }
       ],
     },
