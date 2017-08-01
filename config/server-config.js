@@ -62,11 +62,7 @@ function ServerConfig (solitConfig) {
         '~': path.resolve(solitConfig.srcDir),
         '~~': path.resolve(rootDir),
         '@': path.resolve(solitConfig.srcDir),
-        '@@': path.resolve(rootDir),
-        'middleware': path.resolve(solitConfig.srcDir, 'middleware'),
-        '~middleware': path.resolve(solitConfig.srcDir, 'middleware'),
-        'util': path.resolve(solitConfig.srcDir, 'util'),
-        '~util': path.resolve(solitConfig.srcDir, 'util')
+        '@@': path.resolve(rootDir)
       }
     }
   }
@@ -86,7 +82,7 @@ function ServerConfig (solitConfig) {
       new webpack.optimize.UglifyJsPlugin()
     )
   }
-  
+
   return serverConfig
 }
 
